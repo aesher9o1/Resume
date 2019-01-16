@@ -13,6 +13,10 @@ import { ProjectsComponent } from './home/projects/projects.component';
 import { AcheivementsComponent } from './home/acheivements/acheivements.component';
 import { FooterComponent } from './home/footer/footer.component';
 
+import { AppRoutingModule } from './app-routing.module';
+import { HomeComponent } from './home/home.component';
+import {RouterModule} from '@angular/router';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,12 +26,15 @@ import { FooterComponent } from './home/footer/footer.component';
     ExperienceComponent,
     ProjectsComponent,
     AcheivementsComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    AppRoutingModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
