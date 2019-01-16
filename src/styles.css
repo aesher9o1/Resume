@@ -1,4 +1,33 @@
-/* You can add global styles to this file, and also import other style files */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Raleway',sans-serif;
+}
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@font-face {
+  font-family: aesher;
+  src: url('./assets/font/aesher.otf');
+}
+
+
+.ease-purple-t {
+  color: #000;
+  transition: .3s;
+}
+.ease-purple-t:hover{
+  color: #0ca4a5;
+}
+
+.ease-purple {
+  background: #000;
+  transition: .5s;
+}
+
+.ease-purple:hover{
+  background: #0ca4a5
+}
+
+.active{
+  box-shadow: 0 0 10px rgba(0,0,0,.4);
+}

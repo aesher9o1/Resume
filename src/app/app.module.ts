@@ -17,6 +17,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
 import {RouterModule} from '@angular/router';
 
+import {MatButtonModule} from '@angular/material/button';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,14 +28,17 @@ import {RouterModule} from '@angular/router';
     ProjectsComponent,
     AcheivementsComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    
   ],
   imports: [
     BrowserModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
     BrowserAnimationsModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule,
+    //Material
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
