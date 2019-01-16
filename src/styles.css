@@ -46,3 +46,6 @@ body {
   font-size: 15px;
   color: #f6483b;
 }
+button:focus{
+  outline: none
+}

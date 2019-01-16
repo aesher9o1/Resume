@@ -1,0 +1,15 @@
+.text{
+    margin-top: 2em;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #717171;
+    -webkit-font-smoothing: antialiased;
+    font-family: Raleway,sans-serif;
+    font-weight: 500;
+}
+
+img{
+    width: 100%!important;
+    height: 150px;
+    object-fit: cover;
+}

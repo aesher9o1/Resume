@@ -16,6 +16,7 @@ import { FooterComponent } from './home/footer/footer.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
 import {RouterModule} from '@angular/router';
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 
 import {MatButtonModule} from '@angular/material/button';
 @NgModule({
@@ -37,6 +38,7 @@ import {MatButtonModule} from '@angular/material/button';
     BrowserAnimationsModule,
     AppRoutingModule,
     RouterModule,
+    ScrollToModule.forRoot(),
     //Material
     MatButtonModule
   ],
