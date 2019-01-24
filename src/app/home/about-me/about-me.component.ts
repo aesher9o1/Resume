@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFireDatabase } from '@angular/fire/database';
 
 @Component({
   selector: 'app-about-me',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutMeComponent implements OnInit {
 
-  constructor() { }
-
+  resumeLink=''  
+  
+  constructor(private af: AngularFireDatabase) { 
+    this.af.object('resume').valueChanges().subscribe(res=>{
+        this.resumeLink =''+res
+    })
+  }
+  
   ngOnInit() {
+  
   }
 
 }

@@ -1,4 +1,5 @@
-import {config} from './config'
+import {secrets} from './secrets'
 export const environment = {
   production: false,
+  firebase : secrets
 };
