@@ -19,6 +19,8 @@ import {RouterModule} from '@angular/router';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 
 import {MatButtonModule} from '@angular/material/button';
+import {MatStepperModule} from '@angular/material/stepper';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,7 +42,10 @@ import {MatButtonModule} from '@angular/material/button';
     RouterModule,
     ScrollToModule.forRoot(),
     //Material
-    MatButtonModule
+    MatButtonModule,
+    MatStepperModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

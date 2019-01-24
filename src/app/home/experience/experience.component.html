@@ -9,8 +9,211 @@
     </div>
   </div>
 
-  <div class="row" style="margin-top:1.7em">
-    <div class="col-md-6">asd</div>
-    <div class="col-md-6">asd</div>
+  <div class="row" style="margin-top:6em">
+    <div class="col-md-6">
+      <h3>PROFESSIONAL</h3>
+      <mat-vertical-stepper [linear]="isLinear">
+        <mat-step [stepControl]="firstFormGroup">
+          <form [formGroup]="firstFormGroup">
+            <ng-template matStepLabel><b>Web and App Developer intern at Parkyeri, Istanbul</b></ng-template>
+            <div class="information">
+              <ul>
+                <li>Assisted in developing JavaScript Database SDK</li>
+                <li>Developed and integrated the SDK in ReactJS and Angular 6 apps</li>
+                <li>Developed and integrated the SDK in Flutter</li>
+                <li>Assisted team in research work about competitors and SEO</li>
+              </ul>
+              <button mat-button matStepperNext>Next</button>
+            </div>
+          </form>
+        </mat-step>
+        <mat-step [stepControl]="secondFormGroup">
+          <form [formGroup]="secondFormGroup">
+            <ng-template matStepLabel><b>Web Developer intern at Novolence Crore</b></ng-template>
+            <div class="information">
+              <ul>
+                <li>Worked on MongoDB, Reddis and Node to develop APIs</li>
+                <li>Developed web apps using Angular 7</li>
+              </ul>
+              <button mat-button matStepperPrevious>Back</button>
+              <button mat-button matStepperNext>Next</button>
+            </div>
+          </form>
+        </mat-step>
+        <mat-step [stepControl]="thirdFormGroup">
+          <form [formGroup]="thirdFormGroup">
+            <ng-template matStepLabel><b>Web and App Developer at Piltover Technologies</b></ng-template>
+            <div class="information">
+              <ul>
+                <li>Developed a Trello mock-up for Android</li>
+                <li>Developed the company’s website in Angular 7</li>
+                <li>Managed a team of 5 in assisting with company’s projects</li>
+                <li>Assisted in Research and Development of products</li>
+              </ul>
+              <button mat-button matStepperPrevious>Back</button>
+              <button mat-button matStepperNext>Next</button>
+            </div>
+          </form>
+        </mat-step>
+        <mat-step [stepControl]="fourthFormGroup">
+          <form [formGroup]="fourthFormGroup">
+            <ng-template matStepLabel><b>Web Developer at Association of Indian Universities</b></ng-template>
+            <div class="information">
+              <ul>
+                <li>Revamped old website from AJAX to HTML5 &amp; PHP</li>
+                <li>Automated forms increasing productivty of the organization</li>
+              </ul>
+              <button mat-button matStepperPrevious>Back</button>
+              <button mat-button matStepperNext>Next</button>
+            </div>
+          </form>
+        </mat-step>
+        <mat-step [stepControl]="fifthFromGroup">
+          <form [formGroup]="fourthFormGroup">
+            <ng-template matStepLabel><b>Android App Developer intern at Inkcue</b></ng-template>
+            <div class="information">
+              <ul>
+                <li>Supervised a team of 5</li>
+                <li>Developed an Android Application to buy/sell intellectual properties</li>
+                <li>Used various APIs to embed biometric authentication and various sign in methods to
+                  the app</li>
+              </ul>
+              <button mat-button matStepperPrevious>Back</button>
+              <button mat-button matStepperNext>Next</button>
+            </div>
+          </form>
+        </mat-step>
+        <mat-step [stepControl]="sixthFromGroup">
+          <form [formGroup]="sixthFromGroup">
+            <ng-template matStepLabel><b>Android App Developer intern at Sociedu</b></ng-template>
+            <div class="information">
+              <ul>
+                <li>Project Lead at 2 android development projects.</li>
+                <li>Developed and Android Application to stream data through Raspberry Pi</li>
+              </ul>
+              <button mat-button matStepperPrevious>Back</button>
+              <button mat-button matStepperNext>Next</button>
+            </div>
+          </form>
+        </mat-step>
+        <mat-step [stepControl]="seventhFormGroup">
+          <form [formGroup]="fourthFormGroup">
+            <ng-template matStepLabel><b>Content Writer and Graphic Designer intern at Martopolis</b></ng-template>
+            <div class="information">
+              <ul>
+                <li>Researched on Trends and Problems in the Start-up Community</li>
+                <li>Wrote weekly blogs on WordPress based on research and findings</li>
+                <li>Managed SEO of the blogs published</li>
+                <li>Designed Graphics using Photoshop, Illustrator, and Canva</li>
+              </ul>
+              <button mat-button matStepperNext>Next</button>
+            </div>
+          </form>
+        </mat-step>
+        <mat-step>
+          <ng-template matStepLabel>Done</ng-template>
+
+          <div class="information">
+            “Stay hungry. Stay foolish.”― Steve Jobs
+            <button mat-button matStepperPrevious>Back</button>
+
+          </div>
+        </mat-step>
+      </mat-vertical-stepper>
+    </div>
+    <div class="col-md-6">
+      <h3>EXTRA CIRRICULAR</h3>
+      <mat-vertical-stepper [linear]="isLinear">
+        <mat-step [stepControl]="firstFormGroup">
+          <form [formGroup]="firstFormGroup">
+            <ng-template matStepLabel><b>Vice Chair IEEE SB MUJ</b></ng-template>
+            <div class="information">
+              <ul>
+                <li>Hosted events in co-ordination with IEEE Delhi</li>
+                <li>Managed the team to conduct various other collaborative events</li>
+                <li>Supervised collaborations and project works by members</li>
+                <li>Supervised independent monthly and weekly events by student branch</li>
+              </ul>
+              <button mat-button matStepperNext>Next</button>
+            </div>
+          </form>
+        </mat-step>
+        <mat-step [stepControl]="secondFormGroup">
+          <form [formGroup]="secondFormGroup">
+            <ng-template matStepLabel><b>General Secterary IAESTE LC MUJ</b></ng-template>
+            <div class="information">
+              <ul>
+                <li>Managed Communication with the National Committee</li>
+                <li>Supervised the team in domains of web development and research </li>
+                <li>Managed the team and internal permissions and paperworks to be done for the LC</li>
+              </ul>
+              <button mat-button matStepperPrevious>Back</button>
+              <button mat-button matStepperNext>Next</button>
+            </div>
+          </form>
+        </mat-step>
+        <mat-step [stepControl]="thirdFormGroup">
+          <form [formGroup]="thirdFormGroup">
+            <ng-template matStepLabel><b>Student Mentor and App Developer, ACM Student Chapter MUJ</b></ng-template>
+            <div class="information">
+              <ul>
+                <li>Taught android development to over 70 students</li>
+                <li>Developed the official android application for the student chapter</li>
+              </ul>
+              <button mat-button matStepperPrevious>Back</button>
+              <button mat-button matStepperNext>Next</button>
+            </div>
+          </form>
+        </mat-step>
+        <mat-step [stepControl]="fourthFormGroup">
+          <form [formGroup]="fourthFormGroup">
+            <ng-template matStepLabel><b>Head IT, IAESTE LC MUJ</b></ng-template>
+            <div class="information">
+              <ul>
+                <li>Revamped the old website</li>
+                <li>Redesigned the offer poral increasing user engagement on mobiles and tablets</li>
+                <li>Secured website of XSS increased SEO with meta tags</li>
+              </ul>
+              <button mat-button matStepperPrevious>Back</button>
+              <button mat-button matStepperNext>Next</button>
+            </div>
+          </form>
+        </mat-step>
+        <mat-step [stepControl]="fifthFromGroup">
+          <form [formGroup]="fourthFormGroup">
+            <ng-template matStepLabel><b>USG, MUJ MUN 6.0</b></ng-template>
+            <div class="information">
+              <ul>
+                <li>Developed the web app for the conference</li>
+                <li>Developed backend for registrations and finance handling using sheets API,
+                  firebase and Google Scripts</li>
+              </ul>
+              <button mat-button matStepperPrevious>Back</button>
+              <button mat-button matStepperNext>Next</button>
+            </div>
+          </form>
+        </mat-step>
+        <mat-step [stepControl]="sixthFromGroup">
+          <form [formGroup]="sixthFromGroup">
+            <ng-template matStepLabel><b>Organizer, Jaipur Start-up Weekend</b></ng-template>
+            <div class="information">
+              <ul>
+                <li>Planned, managed the 52 hours hackathon in partnership with Google for starups</li>
+                <li>Mentored and organized the team helping out in domains of need</li>
+              </ul>
+              <button mat-button matStepperPrevious>Back</button>
+              <button mat-button matStepperNext>Next</button>
+            </div>
+          </form>
+        </mat-step>
+        <mat-step>
+          <ng-template matStepLabel>Done</ng-template>
+          <div class="information">
+            That's all for now 💃
+            <button mat-button matStepperPrevious>Back</button>
+          </div>
+        </mat-step>
+      </mat-vertical-stepper>
+    </div>
   </div>
 </div>
