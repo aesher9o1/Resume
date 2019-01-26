@@ -1,0 +1,24 @@
+h5 {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+p{
+    font-size: 14px;
+    line-height: 1.5;
+    color: #717171;
+    -webkit-font-smoothing: antialiased;
+    font-family: Raleway,sans-serif;
+    font-weight: 500;
+}
+
+.acontents {
+    padding-right: 0;
+    padding-left: 1em;
+    padding-top: 2em
+}
+i {
+    font-size: 41px;
+    color: #f6483b;
+    margin-top: 8px;
+}
