@@ -5,7 +5,7 @@
         <div class="d-none  d-lg-block">
           <li><button mat-button [ngx-scroll-to]="'home'">HOME</button></li>
           <li><button [ngx-scroll-to]="'skills'" [ngx-scroll-to-offset]="-200" mat-button>SKILLS</button></li>
-          <li><button mat-button>PROJECTS</button></li>
+          <li><button mat-button [ngx-scroll-to]="'project'" [ngx-scroll-to-offset]="-200">PROJECTS</button></li>
           <li><button mat-button>CONTACT</button></li>
         </div>
       </div>
@@ -20,3 +20,4 @@
 <app-about-me id="about"></app-about-me>
 <app-skills id="skills"></app-skills>
 <app-experience id="experience"></app-experience>
+<app-projects id = "project"></app-projects>

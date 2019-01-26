@@ -19,7 +19,7 @@ import {RouterModule} from '@angular/router';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
-import { AngularFireAuthModule } from 'angularfire2/auth';
+import { GalleryModule } from  '@ngx-gallery/core';
 
 import {MatButtonModule} from '@angular/material/button';
 import {MatStepperModule} from '@angular/material/stepper';
@@ -46,7 +46,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ScrollToModule.forRoot(),
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,        
-
+    GalleryModule.withConfig({ thumb: false,autoPlay: true,loadingStrategy:'preload',counterPosition:'bottom' }),
+    
     //Material
     MatButtonModule,
     MatStepperModule,

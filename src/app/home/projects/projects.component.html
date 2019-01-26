@@ -1,3 +1,28 @@
-<p>
-  projects works!
-</p>
+<div class="container">
+  <div class="row mx-auto" style="margin-top:9em">
+    <div style="width: 220px; text-align: left ;margin: auto">
+      <h1 class="header_topic">PROJECTS</h1>
+      <div>
+        <div style="width: 35%; float: left;height: 2px; background: black"></div>
+        <div class="header_title">MAGICAL STUFFS</div>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="fetched">
+    <gallery [items]="images" [itemTemplate]="details" style="background:white!important; margin-top: 4em">
+
+    </gallery>
+
+    <ng-template #details let-index="index">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4" style="background: rgba(12, 164, 165, 0.7); padding: 1em;font-size: 15  px">
+          {{images[index].data.title}}
+          </div>
+        </div>
+      </div>
+    </ng-template>
+  </div>
+
+</div>
