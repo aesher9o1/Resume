@@ -24,6 +24,9 @@ import { GalleryModule } from  '@ngx-gallery/core';
 import {MatButtonModule} from '@angular/material/button';
 import {MatStepperModule} from '@angular/material/stepper';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ContactComponent } from './home/contact/contact.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,6 +38,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AcheivementsComponent,
     FooterComponent,
     HomeComponent,
+    ContactComponent,
     
   ],
   imports: [
@@ -52,7 +56,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatButtonModule,
     MatStepperModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
