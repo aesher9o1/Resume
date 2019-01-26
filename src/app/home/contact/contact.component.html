@@ -7,19 +7,19 @@
 
   <div class="row" style="margin-top: 5em">
     <div class="col-md-4">
-      <div>
+      <form [formGroup]="form" (ngSubmit)="submitForm()">
         <mat-form-field appearance="outline" style="width: 100%">
           <mat-label>Email ID</mat-label>
-          <input matInput placeholder="Email id">
+          <input matInput placeholder="Email id"  formControlName="email">
         </mat-form-field>
         <br>
         <mat-form-field appearance="outline" style="width: 100%">
           <mat-label>Message</mat-label>
-          <textarea matInput placeholder="Anything you want to say" rows="7"></textarea>
+          <textarea matInput placeholder="Anything you want to say" rows="7" formControlName="message" #title></textarea>
         </mat-form-field>
 
-        <button mat-stroked-button style="color:#0ca4a5">Send</button>
-      </div>
+        <button mat-stroked-button style="color:#0ca4a5" [disabled]="form.invalid">Send</button>
+      </form>
     </div>
     <div class="col-md-4" style="text-align:center">
       <div class="row" style="padding-top:1em">
