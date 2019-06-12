@@ -8,7 +8,7 @@ import { GalleryItem, ImageItem } from '@ngx-gallery/core';
 })
 export class ProjectsComponent implements OnInit {
 
-  private fetched: boolean = false;
+  fetched: boolean = false;
   images: GalleryItem[]=[];
   constructor(private db : AngularFireDatabase) { }
 

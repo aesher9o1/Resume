@@ -1,0 +1,23 @@
+span{
+    font-weight: 500;
+    font-family: aesher;
+    font-size: 144px
+}
+
+@-webkit-keyframes blinker {
+    from {opacity: 1.0; color: black}
+    to { color: #0ca4a5}
+  }
+  .blink{
+      text-decoration: blink;
+      -webkit-animation-name: blinker;
+      -webkit-animation-duration: 1.7s;
+      -webkit-animation-iteration-count:infinite;
+      -webkit-animation-timing-function:ease-in-out;
+      -webkit-animation-direction: alternate;
+  }
+
+
+  .row{
+      overflow: hidden!important;
+  }

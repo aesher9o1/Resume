@@ -12,6 +12,7 @@ import { ExperienceComponent } from './home/experience/experience.component';
 import { ProjectsComponent } from './home/projects/projects.component';
 import { AcheivementsComponent } from './home/acheivements/acheivements.component';
 import { FooterComponent } from './home/footer/footer.component';
+import { ToastrModule } from 'ngx-toastr';
 
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
@@ -27,6 +28,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ContactComponent } from './home/contact/contact.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material';
+import { TestimonialsComponent } from './home/testimonials/testimonials.component';
+import { ProloaderComponent } from './proloader/proloader.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,6 +42,8 @@ import {MatInputModule} from '@angular/material';
     FooterComponent,
     HomeComponent,
     ContactComponent,
+    TestimonialsComponent,
+    ProloaderComponent,
     
   ],
   imports: [
@@ -51,7 +56,8 @@ import {MatInputModule} from '@angular/material';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,        
     GalleryModule.withConfig({ thumb: false,autoPlay: true,loadingStrategy:'preload',counterPosition:'bottom' }),
-    
+    ToastrModule.forRoot(),
+
     //Material
     MatButtonModule,
     MatStepperModule,

@@ -124,6 +124,18 @@
     <div class="col-md-6">
       <h3>EXTRA CIRRICULAR</h3>
       <mat-vertical-stepper [linear]="isLinear">
+          <mat-step [stepControl]="seventhFormGroup">
+              <form [formGroup]="firstFormGroup">
+                <ng-template matStepLabel><b>Lead Developer Student Clubs by Google Developers</b></ng-template>
+                <div class="information">
+                  <ul>
+                    <li>Initiated a women empowerment society</li>
+                    <li>Mentored projects by people</li>
+                  </ul>
+                  <button mat-button matStepperNext>Next</button>
+                </div>
+              </form>
+            </mat-step>
         <mat-step [stepControl]="firstFormGroup">
           <form [formGroup]="firstFormGroup">
             <ng-template matStepLabel><b>Vice Chair IEEE SB MUJ</b></ng-template>
