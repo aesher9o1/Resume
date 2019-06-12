@@ -27,7 +27,7 @@ import {MatStepperModule} from '@angular/material/stepper';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ContactComponent } from './home/contact/contact.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
-import {MatInputModule} from '@angular/material';
+import { MatInputModule } from '@angular/material/input';
 import { TestimonialsComponent } from './home/testimonials/testimonials.component';
 import { ProloaderComponent } from './proloader/proloader.component';
 @NgModule({
